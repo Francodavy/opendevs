@@ -1,0 +1,33 @@
+Authors : - Hona Yete
+	  - Ahouefa Kpossou
+	  - Franco Davy Irakoze
+		  
+		  
+Report of OpenDevs's course on 2018-03-09
+
+
+But du Jour : Présentation du projet choisi dans le cadre du reverse engineering
+
+   
+Notre groupe a présenté le projet PharoJs.
+
+Dans cette présentation, nous avions comme partie :
+
+
+   I.  Introduction  à PharoJs 
+    I.1  Le principe 
+
+  II. Présentation  des packages 
+
+ III. Package  PharoJsApp
+
+  IV. Comment   utiliser   PharoJs
+
+   V.  Design  patterns
+
+
+nous nous sommes concentrés sur le package pharoJsApp qui est une classe dont héritent toutes les applications créées que ce soit côté serveur ou côté client.
+
+
+Les détails de notre présentation sont dans notre diaporama 
+qui est disponible dans notre dépôt.   

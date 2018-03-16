@@ -23,3 +23,15 @@ du projet open source, dans notre cas pour le projet PharoJS Mr Noury nous a pro
 Nous avons choisi de travailler sur les tests et d'essayer de résoudre les problèmes les empêchant de
 bien fonctionner. 
 
+Nous avons essayé de lancer les tests de chaque package avec l' outil test runner dans le but de détecter les bugs pour chaque package.
+
+Quelques  Packages avec des erreurs de test:
+
+- PharojsTranspiler-Test
+
+- PharoJsTools-Playground
+
+- PharoJsTestFramework-Test
+
+- PharoJsExamples-Counter 
+

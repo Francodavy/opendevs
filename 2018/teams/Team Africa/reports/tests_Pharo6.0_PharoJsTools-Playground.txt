@@ -1,0 +1,1 @@
+3 run, 0 passes, 0 skipped, 0 expected failures, 3 failures, 0 errors, 0 unexpected passesFailures:PjPlaygroundTest>>#testReadJsGlobalPjPlaygroundTest>>#testSendMessageToGlobalPjPlaygroundTest>>#testSetNewVariableErrors:

@@ -1,0 +1,88 @@
+Authors : - Hona Yete
+	  - Ahouefa Kpossou
+	  - Franco Davy Irakoze
+		  
+		  
+Report of OpenDevs's course on 2018-03-23
+
+
+But du Jour : Contribuer au projet choisi dans le cadre du reverse engineering
+
+
+
+
+BUG REPORT1 : https://github.com/bouraqadi/PharoJS/issues/6
+
+1.Obtain Pharo6.1-64 via https://pharojs.github.io/faq.html
+    
+2.install PharoJs on Pharo image with
+    Gofer it smalltalkhubUser: 'noury'
+    project: 'PharoJS';
+    configurationOf: #PharoJS ;
+    loadBleedingEdge.
+    
+3.Via Test Runner
+4.Write PharoJS on the top left of the Test runner
+5.Click on PharoJsTranspiler-Tests
+6.Click PJAstTests
+7.Right click and select all
+8.Run selected
+
+    2 failures come
+        PjBlockTranspilationTest >>#testBlockWithExternalVariables
+        '(function(){return x1})' instead of '(function(x1){return function(){return x1}})(42)'
+        PjBlockTranspilationTest >>#testBlockWithNestedScopes
+        '(function(a,x,instVar){return function(v){var w;return [a,v,w,x,y,instVar,123]}})(107,1337,1492)'
+        instead of
+        '(function(a,x,y,instVar){return function(v){var w;return [a,v,w,x,y,instVar,123]}})       (107,1337,91,1492)'
+
+        I don't understand where it comes from .
+        I am using Pharo6.1-64 on Ubuntu 16.04.
+
+
+
+
+BUG REPORT2 : Installation of PharoJs on pharo7
+
+1. Obtain Pharo 7 64 bits on the terminal Linux  with :
+	wget -O - get.pharo.org/64/70+vm | bash
+2. Open the pharo7 image on the terminal with :
+        ./pharo-ui
+3. Obtain PharoJs with :
+Gofer it smalltalkhubUser: 'noury'
+    project: 'PharoJS';
+    configurationOf: #PharoJS ;
+    loadBleedingEdge.
+    
+Got some failures with the ZincHTTPComponents :
+
+* Instance of AnObseleteZnCharacterReadWriteStream did not understand #closed
+* Instance of AnObseleteZnCharacterReadWriteStream did not understand #isReadOnly
+* Instance of AnObseleteZnCharacterReadWriteStream did not understand #setToEnd 
+
+Those three erros come over and over again.
+
+ZincHTTPComponents is included in the pharo7 so does the conflict come. 
+ 
+BUG REPORT3 : (Bug reporté par un autre groupe)
+
+PharoJsCoreLibrariesTest  
+
+un fichier du nom de "tests_Pharo6.0_PharoJsCoreLibrariesTest.txt"
+dans le dépôt liste toutes les classes avec les erreurs.
+
+
+
+
+BUG REPORT4 : https://github.com/bouraqadi/PharoJS/issues/10
+
+PharoJsTools-Playground
+
+un fichier du nom de "tests_Pharo6.0_PharoJsTools-Playground.txt"
+dans le dépôt liste toutes les classes avec les erreurs.
+
+
+
+
+
+
